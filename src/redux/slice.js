@@ -1,16 +1,16 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 export const Slice = createSlice({
-    name: "valores",
+    name: "itemActive",
     initialState: {
-        counter: 0,
+        itemName: '',
     },
     reducers: {
-        guardarCounter: (state, action) => {
-            state.counter = state.counter + 1;
+        guardarItem: (state, action) => {
+            state.itemName = action.payload;
         }
     }
 
 });
 
-export const { guardarCounter } = Slice.actions;
+export const { guardarItem } = Slice.actions;

@@ -3,6 +3,6 @@ import { Slice } from "./slice";
 
 export default configureStore({
     reducer: {
-        valores: Slice.reducer,
+        itemActivate: Slice.reducer,
     },
 });
